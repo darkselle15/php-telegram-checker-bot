@@ -62,7 +62,7 @@ $name = $resp['name'];
 $kelvin = 273;
 $celcius = $temp - $kelvin;
 $feels = $feels_like - $kelvin;
-$weatherresult = urlencode("<b>═════════ 『 ROLDEX 』═════════
+$weatherresult = urlencode("<b>═════════ 『@SHADOWDEMIN』═════════
 Weather at $location: $weather
 Status: $description
 Temp : $celcius °C
