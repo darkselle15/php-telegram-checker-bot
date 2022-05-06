@@ -103,7 +103,7 @@ $respo = 	urlencode("<b>••• CC GENERATOR
 <code>$card</code>
 
 ••• Gen By: @$username
-••• Bot By: <code>@r0ld3x</code></b>");
+••• Bot By: <code>@SHADOWDEMIN</code></b>");
 		edit_message($chatId,$message_id_1,$keyboard,$respo);
 }
 
