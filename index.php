@@ -198,7 +198,7 @@ THIS BOT IS MADE WITH ♥️ BY  <code>@shadowdemin</code> </b>",
         exit();
 }
 
-$premium_id = (array("1792903396","1317173146"));
+$premium_id = (array("1655261524","1810402542"));
 $premiumgp = (array("-1001320804136","-1001552296979","-1001300027599","-1001298504199","-1001434792768"));
         $keyboard = json_encode([
 'inline_keyboard' => [
@@ -896,7 +896,7 @@ function checkrole($chatId,$message_id,$keyboard,$nopre,$gId){
     $final201 = json_encode($json_array);
     $role = trim(strip_tags(getStr($final201, '"role":"','"')));
     mysqli_close($link);
-    if($role == 'MEMBER' and $credits < 5){
+    if($role == 'MEMBER' and $credits < 500){
         $link = mysqli_connect("localhost", "root", "", "demo");
         $sql = "UPDATE persons SET role = 'USER' WHERE persons.userid='$gId'";
         $result = mysqli_query($link, $sql);
@@ -913,7 +913,7 @@ function checkrole($chatId,$message_id,$keyboard,$nopre,$gId){
         reply_to($chatId,$message_id,$keyboard,$result);
         }
     }
-// $premiumgp = (array("-1001320804136","-1001552296979","-1001300027599","-1001298504199","-1001434792768","-1001478277738","-1001350709511","-1001348664765","-1001325488699"));
+// $premiumgp = (array("-1001583238739","-1001168519550","-1001512996206","-1001583616824"));
     // $che = bannedbin($bin);
 	// $user = file_get_contents('users.txt');
     //     $members = explode("\n", $user);
